@@ -1,0 +1,13 @@
+[user]
+	email = lyloou@qq.com
+	name = lyloou
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[core]
+	autocrlf = false
+[cola]
+	spellcheck = false
+[gui]
+	editor = gvim
+[merge]
+	tool = xxdiff
