@@ -11,3 +11,5 @@
 	editor = gvim
 [merge]
 	tool = xxdiff
+[push]
+	default = simple
