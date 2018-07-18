@@ -2,16 +2,37 @@
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
-Plug 'valloric/youcompleteme'
-Plug 'altercation/vim-colors-solarized'
+"Plug 'valloric/youcompleteme'
+"Plug 'altercation/vim-colors-solarized'
+Plug 'chriskempson/base16-vim'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+Plug 'SirVer/ultisnips' 
+Plug 'honza/vim-snippets'
+
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 Plug 'tpope/vim-fireplace', {'for': 'clojure'}
-Plug 'rdnetto/YCM-Generator', {'branch': 'stable'}
+"Plug 'rdnetto/YCM-Generator', {'branch': 'stable'}
 Plug 'fatih/vim-go', {'tag': '*'}
 Plug 'nsf/gocode', {'tag': 'v.20150303', 'rtp':'vim'}
 call plug#end()
+
+let g:UltiSnipsExpandTrigger="<tab>"
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 " }}}
 
 " General {{{
@@ -29,10 +50,14 @@ set winaltkeys=no
 
 " GUI {{{
 "colorscheme tomorrow-night
+let base16colorspace=256
+colorscheme base16-oceanicnext
 set cursorline
 set hlsearch
 set incsearch
 set number
+set relativenumber
+set showcmd
 set splitbelow
 set splitright
 "set guifont=Inconsolata:h20
@@ -52,10 +77,7 @@ syntax on
 
 " Keymap {{{
 let mapleader=","
-
-" 标签操作
-map <leader>tn :tabnew<cr>
-map <leader>tc :tabclose<cr>
+let g:mapleader=","
 map <leader>th :tabp<cr>
 map <leader>tl :tabn<cr>
 
@@ -66,5 +88,4 @@ nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l 
 
 " }}}
-set completeopt-=preview
 
