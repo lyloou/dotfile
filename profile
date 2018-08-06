@@ -26,6 +26,7 @@ alias cdw='cd ~/w'
 alias cdt='cd ~/t'
 alias cdc='cd ~/c'
 alias gl='git lg'
+alias e.='caja .'
 
 # env go
 export GOROOT=$HOME/c/go
