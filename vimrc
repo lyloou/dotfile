@@ -3,10 +3,13 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'vim-scripts/mru.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'dkprice/vim-easygrep'
 "Plug 'valloric/youcompleteme'
 "Plug 'altercation/vim-colors-solarized'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
+Plug 'vim-scripts/vim-auto-save'
 Plug 'SirVer/ultisnips' 
 Plug 'honza/vim-snippets'
 
@@ -109,4 +112,12 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" .vimrc
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
+
+let g:UltiSnipsExpandTrigger="<tab>"
 " }}}
