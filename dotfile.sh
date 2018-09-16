@@ -6,3 +6,6 @@ ln -fs `pwd`/vimrc ~/.vimrc
 ln -fs `pwd`/tmux.conf ~/.tmux.conf
 ln -fs `pwd`/profile ~/.profile
 ln -fs `pwd`/gitconfig ~/.gitconfig
+
+ln -fs `pwd`/zsh/zshrc ~/.zshrc
+ln -fs `pwd`/zsh/tool.zsh ~/.zsh_tool.zsh
