@@ -34,7 +34,7 @@ export GOPATH=$HOME/w/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # env java and android
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_121  ## 这里要注意目录要换成自己解压的jdk 目录
+export JAVA_HOME=/usr/lib/jvm/jdk  ## 这里要注意目录要换成自己解压的jdk 目录
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export ANDROID_HOME=~/c/android-studio
