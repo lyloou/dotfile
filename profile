@@ -21,6 +21,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# jump to tmux when connect to remote server
+if [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
+
 # some more aliases
 alias cdw='cd ~/w'
 alias cdt='cd ~/t'
