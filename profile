@@ -38,6 +38,10 @@ export GOROOT=$HOME/c/go
 export GOPATH=$HOME/w/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# env lua
+export LUAPATH=/usr/lib/lua
+export PATH=$PATH:$LUAPATH/src
+
 # env java and android
 export JAVA_HOME=/usr/lib/jvm/jdk  ## 这里要注意目录要换成自己解压的jdk 目录
 export JRE_HOME=${JAVA_HOME}/jre
