@@ -139,6 +139,8 @@ nnoremap gj j
 " 关闭NERDTree快捷键
 map <M-,> :NERDTreeToggle<CR>
 imap <M-,> <ESC>:NERDTreeToggle<CR>
+map <Leader>, :NERDTreeToggle<CR>
+imap <Leader>, <ESC>:NERDTreeToggle<CR>
 
 " 显示行号
 let NERDTreeShowLineNumbers=1
