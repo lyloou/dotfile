@@ -16,13 +16,22 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 " }}} Vim-Plug  
 
+" {{{ encoding
+" 设置编码
+let &termencoding=&encoding
+set fileencodings=ucs-bom,utf-8,cp936
+set renderoptions=type:directx
+set encoding=utf-8
+language messages zh_CN.utf-8 " solve console messy code
+" }}} encoding
 
 " {{{ General 
 set title
 set nocompatible   
 set nobackup
+set nowritebackup
 set noswapfile
-set history=1024
+set history=2048
 set autochdir
 set autoread
 set whichwrap=b,s,<,>,[,]
@@ -35,6 +44,7 @@ set t_ti= t_te= " 退出终端时内容显示在终端上
 "set colorcolumn=81
 set showmatch
 set matchtime=2
+set guicursor+=n-v-c:blinkon0
 " }}} General 
 
 
@@ -46,7 +56,8 @@ if has("gui_running")
     set background=dark
     color solarized
     " https://github.com/hbin/top-programming-fonts
-    set guifont=Monaco\ 12
+    "set guifont=Monaco\ 13
+    set guifont=monaco:h13
 
     " shift+F2: Toggle Menu and Toolbar
     set guioptions-=m     " 隐藏菜单栏
@@ -61,7 +72,7 @@ if has("gui_running")
 
     "au GUIEnter * simalt ~x  " 窗口启动时自动最大化
     winpos 200 100            " 指定窗口出现的位置，坐标原点在屏幕左上角
-    set lines=31 columns=88 " 指定窗口大小，lines为高度，columns为宽度
+    set lines=48 columns=166 " 指定窗口大小，lines为高度，columns为宽度
     set showtabline=2       " 显示Tab栏
     set guitablabel=%t        "标签只显示名称"
     set tabpagemax=20
@@ -129,6 +140,9 @@ nnoremap k gk
 nnoremap gk k
 nnoremap j gj
 nnoremap gj j
+"取消高亮
+map <F6> :nohlsearch<CR>    
+imap <F6> <ESC>:nohlsearch<CR>
 " }}} Keymap 
 
 
