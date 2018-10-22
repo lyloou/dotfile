@@ -101,4 +101,4 @@ source ~/.profile
 #source ~/.oh-my-zsh/plugins/incr/incr*.zsh
 #source ~/.oh-my-zsh/plugins/tmux/tmux*.zsh
 
-source  .zsh_tool.zsh
+source  ~/.zsh_tool.zsh
