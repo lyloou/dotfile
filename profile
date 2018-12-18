@@ -22,21 +22,23 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # jump to tmux when connect to remote server
-if [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
+#if [ -z "$TMUX" ]; then
+#   tmux attach -t default || tmux new -s default
+#fi
 
 # some more aliases
 alias cdw='cd ~/w'
 alias cdt='cd ~/t'
 alias cdc='cd ~/c'
 alias gl='git lg'
-alias e.='caja .'
+alias e.='nohup caja . &'
+# env idea
+export IDEAPATH=$HOME/c/idea/idea
 
 # env go
 export GOROOT=$HOME/c/go
 export GOPATH=$HOME/w/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$IDEAPATH/bin
 
 # env lua
 export LUAPATH=/usr/lib/lua

@@ -56,8 +56,8 @@ if has("gui_running")
     set background=dark
     color solarized
     " https://github.com/hbin/top-programming-fonts
-    "set guifont=Monaco\ 13
-    set guifont=monaco:h13
+    set guifont=Monaco\ 13
+    "set guifont=monaco:h13
 
     " shift+F2: Toggle Menu and Toolbar
     set guioptions-=m     " 隐藏菜单栏
@@ -110,6 +110,14 @@ syntax enable
 
 
 " {{{ Keymap 
+" directory
+imap <M-,> <DOWN>
+imap <M-i> <UP>
+imap <M-0> <HOME>
+imap <M-4> <END>
+imap <M-h> <LEFT>
+imap <M-l> <RIGHT>
+" leader
 let mapleader=","
 let g:mapleader=","
 " 移动分割窗口
@@ -151,8 +159,6 @@ imap <F6> <ESC>:nohlsearch<CR>
 " NerdTree
 " ---------------------------------
 " 关闭NERDTree快捷键
-map <M-,> :NERDTreeToggle<CR>
-imap <M-,> <ESC>:NERDTreeToggle<CR>
 map <Leader>, :NERDTreeToggle<CR>
 imap <Leader>, <ESC>:NERDTreeToggle<CR>
 
