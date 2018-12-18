@@ -110,13 +110,6 @@ syntax enable
 
 
 " {{{ Keymap 
-" directory
-imap <M-,> <DOWN>
-imap <M-i> <UP>
-imap <M-0> <HOME>
-imap <M-4> <END>
-imap <M-h> <LEFT>
-imap <M-l> <RIGHT>
 " leader
 let mapleader=","
 let g:mapleader=","
