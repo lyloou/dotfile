@@ -28,12 +28,13 @@ fi
 
 # some more aliases
 alias cdw='cd ~/w'
+alias cdp='cd ~/p'
 alias cdt='cd ~/t'
 alias cdc='cd ~/c'
 alias gl='git lg'
-alias e.='nohup caja . &'
+alias e.='nohup nautilus . >/dev/null 2>&1 &'
 # env idea
-export IDEAPATH=$HOME/c/idea/idea
+export IDEAPATH=$HOME/c/idea
 
 # env go
 export GOROOT=$HOME/c/go
@@ -41,13 +42,14 @@ export GOPATH=$HOME/w/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$IDEAPATH/bin
 
 # env lua
-export LUAPATH=/usr/lib/lua
+export LUAPATH=$HOME/c/lua
 export PATH=$PATH:$LUAPATH/src
 
 # env java and android
-export JAVA_HOME=/usr/lib/jvm/jdk  ## 这里要注意目录要换成自己解压的jdk 目录
+export JAVA_HOME=$HOME/c/java/jdk  ## 这里要注意目录要换成自己解压的jdk 目录
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-export ANDROID_HOME=~/c/android-studio
-export ANDROID_SDK=~/c/sdk
+export ANDROID_HOME=~/c/android/as
+export ANDROID_SDK=~/c/android/sdk
+export ANDROID_NDK=~/c/android/ndk
 export PATH=${GOPATH}/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/bin:${ANDROID_SDK}/platform-tools/:$PATH
