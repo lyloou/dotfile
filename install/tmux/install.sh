@@ -13,5 +13,6 @@ sudo apt-get install ncurses-dev
 make
 sudo make install
 cd -
-sudo rm -rf /usr/local/src/tmux-\*
+sudo rm -rf /usr/local/src/tmux-*
 sudo mv tmux-${VERSION} /usr/local/src
+cp tmux_task.sh ~/.tmux_task.sh
