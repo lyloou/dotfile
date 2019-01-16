@@ -31,8 +31,10 @@ alias cdw='cd ~/w'
 alias cdp='cd ~/p'
 alias cdt='cd ~/t'
 alias cdc='cd ~/c'
+alias cdwr='cd ~/w/rryp/rryp-app'
 alias gl='git lg'
 alias e.='nohup nautilus . >/dev/null 2>&1 &'
+alias www='python -m SimpleHTTPServer 8000'
 # env idea
 export IDEAPATH=$HOME/c/idea
 
