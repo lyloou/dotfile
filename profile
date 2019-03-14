@@ -35,6 +35,7 @@ alias cdwr='cd ~/w/rryp/rryp-app'
 alias gl='git lg'
 alias e.='nohup nautilus . >/dev/null 2>&1 &'
 alias www='python -m SimpleHTTPServer 8000'
+alias wget='wget -c'
 # env idea
 export IDEAPATH=$HOME/c/idea
 
