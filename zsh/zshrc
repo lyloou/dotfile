@@ -102,3 +102,6 @@ source ~/.profile
 #source ~/.oh-my-zsh/plugins/tmux/tmux*.zsh
 
 source  ~/.zsh_tool.zsh
+
+# added by travis gem
+[ -f /home/lilou/.travis/travis.sh ] && source /home/lilou/.travis/travis.sh

@@ -31,8 +31,13 @@ alias cdw='cd ~/w'
 alias cdp='cd ~/p'
 alias cdt='cd ~/t'
 alias cdc='cd ~/c'
+alias cdwr='cd ~/w/rryp/rryp-app'
 alias gl='git lg'
 alias e.='nohup nautilus . >/dev/null 2>&1 &'
+alias www='python -m SimpleHTTPServer 8000'
+alias wget='wget -c'
+alias rm='echo "Do not use this command, use trash-put instaed";false'
+alias a.='sh ~/.startup.sh'
 # env idea
 export IDEAPATH=$HOME/c/idea
 
@@ -40,6 +45,10 @@ export IDEAPATH=$HOME/c/idea
 export GOROOT=$HOME/c/go
 export GOPATH=$HOME/w/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$IDEAPATH/bin
+
+# env node
+export NODEPATH=$HOME/c/js/node
+export PATH=$PATH:$NODEPATH/bin
 
 # env lua
 export LUAPATH=$HOME/c/lua
