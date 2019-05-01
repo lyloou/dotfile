@@ -2,8 +2,9 @@
 # Firstly, you need modify smb.conf file
 
 sudo apt-get install samba -y
-sudo cp smb.conf /etc/samba/smb.conf
+sudo cat smb.conf >> /etc/samba/smb.conf
+sudo sed -i "s|\$USER|$USER|g" /etc/samba/smb.conf
 mkdir -p $HOME/w/smbshare
 
-# sudo smbpasswd -a user
+# sudo smbpasswd -a $USER
 # sudo service smbd restart
