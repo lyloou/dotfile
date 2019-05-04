@@ -5,6 +5,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'altercation/vim-colors-solarized'
     Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
     Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'kana/vim-textobj-user'
+    Plug 'kana/vim-textobj-entire'
     Plug 'junegunn/vim-easy-align'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -57,7 +59,7 @@ if has("gui_running")
     color solarized
     " https://github.com/hbin/top-programming-fonts
     "set guifont=Monaco\ 13
-    set guifont=Ubuntu\ Mono\ 11
+    set guifont=Ubuntu\ Mono\ 12
     "set guifont=monaco:h13
 
     " shift+F2: Toggle Menu and Toolbar
@@ -84,6 +86,7 @@ endif
 
 set cursorline
 "set cursorcolumn
+set wildmenu
 set hlsearch
 set incsearch
 set number
@@ -146,7 +149,8 @@ nnoremap gj j
 map <F6> :nohlsearch<CR>    
 imap <F6> <ESC>:nohlsearch<CR>
 " }}} Keymap 
-
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
 
 " {{{ PlugConfig 
 " ---------------------------------
