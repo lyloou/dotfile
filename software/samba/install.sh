@@ -8,5 +8,6 @@ sudo sed -i "s|\$USER|$USER|g" /etc/samba/smb.conf
 mkdir -p $HOME/w/smbshare
 chmod 777 $HOME/w/smbshare
 
-# sudo smbpasswd -a $USER
-# sudo service smbd restart
+sudo smbpasswd -a $USER
+sudo service smbd restart
+cat /etc/samba/smb.conf
