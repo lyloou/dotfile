@@ -62,3 +62,8 @@ export ANDROID_HOME=~/c/android/as
 export ANDROID_SDK=~/c/android/sdk
 export ANDROID_NDK=~/c/android/ndk
 export PATH=${GOPATH}/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/bin:${ANDROID_SDK}/platform-tools/:$PATH
+
+# env maven
+export M2_HOME=~/c/java/maven
+export PATH=${M2_HOME}/bin:$PATH
+
