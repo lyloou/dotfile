@@ -36,8 +36,9 @@ alias gl='git lg'
 alias e.='nohup nautilus . >/dev/null 2>&1 &'
 alias www='python -m SimpleHTTPServer 8000'
 alias wget='wget -c'
-alias rm='echo "Do not use this command, use trash-put instaed";false'
+alias tt='trash-put'
 alias a.='sh ~/.startup.sh'
+alias xrenew='git pull && mvn package && cd release && ./restart.sh && cd ..'
 # env idea
 export IDEAPATH=$HOME/c/idea
 
