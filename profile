@@ -57,7 +57,6 @@ export PATH=$PATH:$LUAPATH/src
 
 # env java and android
 export JAVA_HOME=$HOME/c/java/jdk  ## 这里要注意目录要换成自己解压的jdk 目录
-export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export ANDROID_HOME=~/c/android/as
 export ANDROID_SDK=~/c/android/sdk

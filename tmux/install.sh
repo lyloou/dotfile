@@ -7,8 +7,8 @@ tar xf tmux-${VERSION}.tar.gz
 rm -f tmux-${VERSION}.tar.gz
 cd tmux-${VERSION}
 
-sudo apt-get install libevent-dev
-sudo apt-get install ncurses-dev
+sudo apt-get install libevent-dev -y
+sudo apt-get install ncurses-dev -y
 ./configure
 make
 sudo make install
