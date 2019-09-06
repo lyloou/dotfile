@@ -37,6 +37,8 @@ alias e.='nohup nautilus . >/dev/null 2>&1 &'
 alias www='python -m SimpleHTTPServer 8000'
 alias wget='wget -c'
 alias tt='trash-put'
+alias ..='cd ..'
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias a.='sh ~/.startup.sh'
 alias xrenew='git pull && mvn package && cd release && ./restart.sh && cd ..'
 # env idea
@@ -66,4 +68,10 @@ export PATH=${GOPATH}/bin:${JAVA_HOME}/bin:${ANDROID_HOME}/bin:${ANDROID_SDK}/pl
 # env maven
 export M2_HOME=~/c/java/maven
 export PATH=${M2_HOME}/bin:$PATH
+
+export RUN_AS_USER=root
+
+# zookeeper
+export ZOOKEEPER_HOME=~/c/apache/zookeeper
+export PATH=$PATH:$ZOOKEEPER_HOME/bin
 
