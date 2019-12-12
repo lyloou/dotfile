@@ -44,7 +44,7 @@ alias a.='sh ~/.startup.sh'
 #列出当前目录里最大的10个文件。
 alias dutop='du -s * | sort -n | tail'
 # 当你的机器在内网的时候，可以通过这个命令查看外网的IP。
-alias ipconfigme = 'curl ifconfig.me'
+alias ipconfigme='curl ifconfig.me'
 alias marix='tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
 ## Show hidden files ##
 alias l.='ls -d .* --color=auto'
