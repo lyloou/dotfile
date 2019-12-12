@@ -26,6 +26,7 @@ fi
 #   tmux attach -t default || tmux new -s default
 #fi
 
+alias reloadrc="source ~/.zshrc"
 # some more aliases
 alias cdw='cd ~/w'
 alias cdp='cd ~/p'
@@ -40,6 +41,23 @@ alias tt='trash-put'
 alias ..='cd ..'
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
 alias a.='sh ~/.startup.sh'
+#列出当前目录里最大的10个文件。
+alias dutop = 'du -s * | sort -n | tail'
+# 当你的机器在内网的时候，可以通过这个命令查看外网的IP。
+alias ipconfigme = 'curl ifconfig.me'
+alias marix='tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+alias grep='grep --color=auto'
+alias mkdir='mkdir -pv'
+
+#9: Create a new set of commands
+alias path='echo -e ${PATH//:/\\n}'
+alias d='date +%F'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%Y-%m-%d"'
+
 alias xrenew='git pull && mvn package && cd release && ./restart.sh && cd ..'
 # env idea
 export IDEAPATH=$HOME/c/idea
