@@ -59,6 +59,7 @@ alias nowtime=now
 alias nowdate='date +"%Y-%m-%d"'
 
 alias xrenew='git pull && mvn package && cd release && ./restart.sh && cd ..'
+alias xflow='cd /root/w/java/spring-boot-demo/ && git pull && mvn package && cd script && ./restart.sh && cd ..'
 # env idea
 export IDEAPATH=$HOME/c/idea
 
